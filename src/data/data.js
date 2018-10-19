@@ -238,7 +238,7 @@ export class DataClient {
 
     debug("publishing message to %s: %O", t, message)
 
-    this.mqtt.publish(t, JSON.stringify(message))
+    this.mqtt.publish(t, JSON.stringify(message), console.log);
   }
 
   /**
